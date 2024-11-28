@@ -1,0 +1,93 @@
+ body {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     background-color: #e9ecef;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: #495057;
+ }
+
+ h1 {
+     margin-bottom: 30px;
+     font-size: 2.5em;
+     text-align: center;
+     color: #343a40;
+     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ button {
+     padding: 12px 24px;
+     margin: 10px;
+     border: none;
+     border-radius: 8px;
+     background-color: #007bff;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s, transform 0.2s;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+
+ button:disabled {
+     background-color: #adb5bd;
+     cursor: not-allowed;
+ }
+
+ button:hover:not(:disabled) {
+     background-color: #0056b3;
+     transform: translateY(-2px);
+ }
+
+ video {
+     margin-top: 30px;
+     border: 3px solid #007bff;
+     border-radius: 8px;
+     width: 80%;
+     max-width: 700px;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ }
+
+ .dark-mode {
+     background-color: #343a40;
+     color: #e9ecef;
+ }
+
+ .dark-mode h1 {
+     color: #adb5bd;
+ }
+
+ .dark-mode button {
+     background-color: #495057;
+     color: #e9ecef;
+ }
+
+ .dark-mode button:hover:not(:disabled) {
+     background-color: #6c757d;
+ }
+
+ .dark-mode video {
+     border-color: #495057;
+ }
+
+ .dark-mode {
+     transition: background-color 0.3s, color 0.3s;
+ }
+
+ #darkModeBtn {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     background: none;
+     border: none;
+     cursor: pointer;
+     font-size: 24px;
+     color: #495057;
+     transition: color 0.3s;
+ }
+
+ .dark-mode #darkModeBtn {
+     color: #e9ecef;
+ }
